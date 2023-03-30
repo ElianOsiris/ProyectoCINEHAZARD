@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C014066-FC3F-46BA-AAD6-8F15ECA4C00C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>a</RootNamespace>
+    <AssemblyName>a</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Botones">
+      <HintPath>..\..\..\..\Controles Personalizados\Botones\Botones\bin\Debug\Botones.dll</HintPath>
+    </Reference>
+    <Reference Include="ComboBox2">
+      <HintPath>..\..\..\..\Controles Personalizados\ComboBox2\ComboBox2\bin\Debug\ComboBox2.dll</HintPath>
+    </Reference>
+    <Reference Include="ComboBoxP">
+      <HintPath>..\..\..\..\Controles Personalizados\ComboBoxP\ComboBoxP\bin\Debug\ComboBoxP.dll</HintPath>
+    </Reference>
+    <Reference Include="Cuadro_de_Texto_txtbox">
+      <HintPath>..\..\..\..\Controles Personalizados\Cuadro_de_Texto_txtbox\Cuadro_de_Texto_txtbox\bin\Debug\Cuadro_de_Texto_txtbox.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Selector_de_Fechas">
+      <HintPath>..\..\..\..\Controles Personalizados\Selector_de_Fechas\Selector_de_Fechas\bin\Debug\Selector_de_Fechas.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2Copia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Copia.Designer.cs">
+      <DependentUpon>Form2Copia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSecionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSecionEmpleado.Designer.cs">
+      <DependentUpon>IniciarSecionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSeciónAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSeciónAdministrador.Designer.cs">
+      <DependentUpon>IniciarSeciónAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarContraseña.Designer.cs">
+      <DependentUpon>RecuperarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarContraseña_Continuacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarContraseña_Continuacion.Designer.cs">
+      <DependentUpon>RecuperarContraseña_Continuacion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Copia.resx">
+      <DependentUpon>Form2Copia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSecionEmpleado.resx">
+      <DependentUpon>IniciarSecionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSeciónAdministrador.resx">
+      <DependentUpon>IniciarSeciónAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarContraseña.resx">
+      <DependentUpon>RecuperarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarContraseña_Continuacion.resx">
+      <DependentUpon>RecuperarContraseña_Continuacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Catalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cajas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ventas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Salas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Funciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cartelera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pelicula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch001.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch002.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch003.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch004.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch005.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch006.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch007.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch008.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sketch009.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo de la pelicula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo de la pelicula2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clasificacion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hora de inicio y final 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen de pelicula2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo de la pelicula21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genero peliculas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IdEmpleado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IdEmpleado21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo electronico2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nombre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ap_Paterno2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ap_Materno2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ap_Paterno21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Direccion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codigo postal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nombre de Usuario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contraseña2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipo de Empleado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nombre de Usuario21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paterno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Materno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeroAsiento2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SillaRuedas2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TipoSala2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NombreSala2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IdFunciones2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOLETO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOLETO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticekt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TICKET2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clasificacion3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genero peliculas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Descripcion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{a790dbb9-8342-423b-bfe0-ea4cc9c4340d}</Project>
+      <Name>ENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LOGICA\LOGICA.csproj">
+      <Project>{adae0568-e9b1-445e-9929-da69c6c0a650}</Project>
+      <Name>LOGICA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
